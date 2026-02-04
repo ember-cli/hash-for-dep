@@ -51,6 +51,8 @@ jobs:
       - uses: actions/checkout@v6
       # use the built-in npm for these super old tests
       - run: cat package.json | jq "del(.packageManager)" | tee package.json
+      # release-plan isn't needed for the test and has sub-deps that cause old npm to fail
+      - run: cat package.json | jq "del(.devDependencies[\"release-plan\"])" | tee package.json
       - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
