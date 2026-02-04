@@ -2,21 +2,21 @@
   "name": "hash-for-dep",
   "version": "1.5.1",
   "description": "generates a hash that represents a module and its depenencies uniqueness",
+  "homepage": "https://github.com/ember-cli/hash-for-dep#readme",
+  "bugs": {
+    "url": "https://github.com/ember-cli/hash-for-dep/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ember-cli/hash-for-dep.git"
+  },
+  "license": "ISC",
+  "author": "Stefan Penner <stefan.penner@gmail.com>",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/**/*-test.js",
     "test:debug": "mocha debug tests/**/*-test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stefanpenner/hash-for-dep.git"
-  },
-  "author": "Stefan Penner <stefan.penner@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stefanpenner/hash-for-dep/issues"
-  },
-  "homepage": "https://github.com/stefanpenner/hash-for-dep#readme",
   "dependencies": {
     "heimdalljs": "^0.2.3",
     "heimdalljs-logger": "^0.1.7",
@@ -25,7 +25,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.2.4"
+    "mocha": "^2.2.4",
+    "release-plan": "^0.17.4"
   },
   "packageManager": "pnpm@10.28.2"
 }
