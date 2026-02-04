@@ -26,5 +26,6 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.2.4"
-  }
+  },
+  "packageManager": "pnpm@10.28.2"
 }
